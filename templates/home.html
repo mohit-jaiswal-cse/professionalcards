@@ -1,0 +1,47 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/static/uploads/logo.jpg">
+    <style>
+        body { background: linear-gradient(135deg, #4e73df 0%, #1cc88a 100%); min-height: 100vh; }
+        .navbar-brand img { height: 40px; margin-right: 10px; }
+        footer { background: #222; color: #fff; padding: 20px 0; text-align: center; margin-top: 40px; }
+        .footer-links a { color: #1cc88a; margin: 0 10px; }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: #3777c2;">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="/static/uploads/logo.jpg" alt="Logo">
+      <span>Business Card Generator</span>
+    </a>
+    <div class="d-flex">
+      <a href="{{ url_for('login') }}" class="btn btn-outline-light me-2">Login</a>
+      <a href="{{ url_for('register') }}" class="btn btn-light">Register</a>
+    </div>
+  </div>
+</nav>
+<div class="container d-flex flex-column justify-content-center align-items-center" style="height:80vh;">
+    <img src="/static/uploads/logo.jpg" alt="Logo" style="height:80px; margin-bottom: 20px;">
+    <h1 class="mb-4 text-white">Welcome to <span class="fw-bold">Business Card Generator</span></h1>
+    <div>
+        <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg me-3">Login</a>
+        <a href="{{ url_for('register') }}" class="btn btn-outline-primary btn-lg">Register</a>
+    </div>
+</div>
+<footer>
+    <div>Copyright &copy; {{ 2023 }} Business Card Generator</div>
+    <div class="footer-links mt-2">
+        <a href="mailto:contact@businesscard.com">Contact</a> |
+        <a href="https://www.linkedin.com/in/mohitjaiswal-cse/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/mohit-jaiswal-cse" target="_blank">GitHub</a>
+    </div>
+</footer>
+</body>
+</html>
