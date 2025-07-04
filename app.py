@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'
 
 # ✅ Configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:Mj8009468%40@localhost/business_card_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///business_card_db.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 
