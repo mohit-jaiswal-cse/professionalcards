@@ -18,7 +18,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background: #3777c2;">
   <div class="container-fluid">
     <a class="navbar-brand d-flex align-items-center" href="/">
-      <img src="/static/uploads/logo.jpg" alt="Logo">
+      <img src="/static/uploads/logo.jpg" alt="Logo" class="img-fluid">
       <span>Business Card Generator</span>
     </a>
     <div class="d-flex">
@@ -27,11 +27,11 @@
     </div>
   </div>
 </nav>
-<div class="container d-flex flex-column justify-content-center align-items-center" style="height:80vh;">
-    <img src="/static/uploads/logo.jpg" alt="Logo" style="height:80px; margin-bottom: 20px;">
+<div class="container d-flex flex-column justify-content-center align-items-center text-center" style="height:80vh;">
+    <img src="/static/uploads/logo.jpg" alt="Logo" class="img-fluid" style="height:80px; margin-bottom: 20px;">
     <h1 class="mb-4 text-white">Welcome to <span class="fw-bold">Business Card Generator</span></h1>
     <div>
-        <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg me-3">Login</a>
+        <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg me-3 mb-2 mb-md-0">Login</a>
         <a href="{{ url_for('register') }}" class="btn btn-outline-primary btn-lg">Register</a>
     </div>
 </div>
